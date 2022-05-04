@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="//unpkg.com/@atlaskit/css-reset/dist/bundle.css" />
+  <script src="//connect-cdn.atl-paas.net/all.js" data-options="sizeToParent:true" type="text/javascript"></script>
+
+  {{#if cssfile}}
+    <link rel="stylesheet" href="{{cssfile}}" />
+  {{/if}}
+
+  {{#if jsfile}}
+    <script type="text/javascript" src="{{jsfile}}"></script>
+  {{/if}}
+</head>
+<body>
+  <section id="content" role="main" class="ac-content" style="height: 100%;">
+    {{{body}}}
+  </section>
+</body>
+</html>

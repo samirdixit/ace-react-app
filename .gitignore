@@ -1,0 +1,16 @@
+*.iml
+*.idea
+.DS_Store
+node_modules
+*.pem
+credentials.json
+.cache
+.env
+.vscode
+.serverless
+*.code-workspace
+dist/*
+client/node_modules
+client/.parcel-cache
+.parcel-cache
+ngrok

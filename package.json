@@ -1,0 +1,50 @@
+{
+  "name": "my-ace-react-app",
+  "version": "1.0.0",
+  "description": "Server code for the ACE ReactJS app",
+  "private": true,
+  "scripts": {
+    "build": "parcel build --log-level 1 --no-minify --no-source-maps --target --out-dir dist src/*.js src/*.hbs src/utils/*.js src/routes/*.js src/assets/**/**",
+    "start": "NODE_ENV=development node -r esm dist/app.js",
+    "lint": "eslint app.js routes"
+  },
+  "dependencies": {
+    "atlassian-connect-express": "^7.1.1",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "csv-stringify": "^5.6.2",
+    "dotenv": "^9.0.2",
+    "ejs": "^3.1.6",
+    "errorhandler": "^1.5.1",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "express-hbs": "^2.3.4",
+    "helmet": "^4.1.1",
+    "morgan": "^1.10.0",
+    "nocache": "^2.1.0",
+    "parcel": "^2.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-react": "^7.13.13",
+    "@parcel/transformer-sass": "^2.0.1",
+    "autoprefixer": "^10.3.7",
+    "babel-plugin-styled-components": "^1.11.1",
+    "eslint": "^7.10.0",
+    "eslint-plugin-react": "^7.21.3",
+    "longjohn": "^0.2.12",
+    "ngrok": "^3.3.0",
+    "nodemon": "^2.0.4",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-externals": "^0.5.1",
+    "postcss": "^8.3.9",
+    "postcss-modules": "^3.2.2",
+    "sass": "^1.32.12",
+    "sqlite3": "^5.0.6",
+    "typescript": "^4.2.4"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ]
+}

@@ -1,0 +1,11 @@
+.ac-content {
+  height: 100%;
+}
+
+.mainSection {
+  padding: 100px 20px;
+  font-size: 18px;
+  color: darkslategrey;
+  display: flex;
+  justify-content: center;
+}
